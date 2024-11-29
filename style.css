@@ -1,0 +1,57 @@
+:root{
+    --color: #ff6a00;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+    color: #fff;
+}
+*::selection{
+    background-color: #00000079;
+    color: var(--color);
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url(Images/7zx.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .timer{
+    text-align: center;
+    backdrop-filter: blur(5px);
+    background-color: #00000079;
+    padding: 60px 110px;
+    border-radius: 10px;
+}
+.container .timer h1{
+    font-size: 130px;
+    margin-bottom: 20px;
+}
+.container .timer .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .timer .icons i{
+    font-size: 85px;
+    margin: 0 35px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.container .timer .icons .play{
+    font-size: 130px;
+    color: var(--color);
+    transition: 0.3s;
+}
+.container .timer .icons i:hover{
+    color: var(--color);
+}
+.container .timer .icons .play:hover{
+    color: #fff;
+}
